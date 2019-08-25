@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="26dp">
+
+      <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/selecione_uma_carta"
+            android:textAlignment="center"
+            android:textFontWeight="bold"
+            android:textSize="26dp"
+            android:layout_margin="50px"/> -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibCarta1"
+                android:layout_width="120dp"
+                android:layout_height="240dp"
+                android:onClick="opcaoSelecionada"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cartavirada" />
+
+            <ImageButton
+                android:id="@+id/ibCarta2"
+                android:layout_width="120dp"
+                android:layout_height="240dp"
+                android:onClick="opcaoSelecionada"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cartavirada" />
+
+            <ImageButton
+                android:id="@+id/ibCarta3"
+                android:layout_width="120dp"
+                android:layout_height="240dp"
+                android:onClick="opcaoSelecionada"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cartavirada" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="50px"
+            android:onClick="btnConfirmar"
+            android:text="Confirmar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/response">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msgTxt"
+                android:layout_margin="20dp"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btnTentarNovamente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="jogarNovamente"
+                android:text="Tentar Novamente"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
